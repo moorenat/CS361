@@ -1,0 +1,21 @@
+<h3> Search Results: </h3>
+<p>
+
+    {{#each context.results.previews}}
+    {{/each}}
+
+</p>
+
+<table>
+    <tbody>
+        {{#each context.results}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{{description}}}</td>
+            <td><audio controls="controls">
+                    <source src="{{previews.preview-hq-mp3}}" />
+                </audio></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
