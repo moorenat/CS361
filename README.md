@@ -9,7 +9,7 @@ Use the GUI to get an html page with SoundSearch results. Otherwise use a GET re
 /results/{insert query here, space separated}
 
 Headers:
-'accepts': 'application/json'
+'accept': 'application/json'
 
 eg:
 
