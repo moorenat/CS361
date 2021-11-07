@@ -33,13 +33,20 @@ router.post('/', function (req, res) {
 router.get('/:keys', function (req, res) {
     console.log(req.params)
     let keys = req.params.keys
+    let accepts = req.accepts(['application/json', 'text/html'])
     let context = sound_search(soundurl + keys + '&fields=name,description,previews' + '&token=' + apikey)
         .then((context) => {
-            res.status(200);
-            res.render('results', {
-                layout: 'index',
-                context
-            });
+            if (accepts === 'application/json') {
+                res.status(200).json(context);
+            }
+            else {
+                res.status(200);
+                res.render('results', {
+                    layout: 'index',
+                    context
+                });
+            }
+
             console.log(context)
             return context
 
