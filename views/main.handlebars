@@ -1,10 +1,25 @@
-<h2>Welcome to Oauth2.0</h2>
-<h3>Click the button to initiate authorization</h3>
+<h2>SoundSearch: App and API for free sounds</h2>
+<h3>Enter text and click search to get the top 5 closest sounds from the freesound.com library.</h3>
 
-<form name="oauth_form" action="/" method="POST">
+<form name="sound_search_form" action="/results" method="POST">
 
     <div class="form-group">
+        <label>Keywords(Space separated, no special characters)</label>
+        <input type="text" class="form-control" id="keys" name="keys">
         <input type="submit" value="Submit">
     </div>
 
 </form>
+
+<div>
+    <h3>Enter search terms to grab closest related wiki entry:</h3>
+    <form name="wiki_search_form" action="/wiki" method="POST">
+
+        <div class="form-group">
+            <label>Keywords(Space separated, no special characters)</label>
+            <input type="text" class="form-control" id="keys" name="keys">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</div>
