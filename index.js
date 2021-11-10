@@ -5,7 +5,7 @@ const router = module.exports = require('express').Router();
 const axios = require('axios').default;
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 //Loads the handlebars module
