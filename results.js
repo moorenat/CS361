@@ -34,6 +34,7 @@ router.post('/', function (req, res) {
         })
 })
 
+//GET route for use as API
 router.get('/:keys', function (req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*')
     let keys = req.params.keys
