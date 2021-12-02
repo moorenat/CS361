@@ -10,9 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 //Loads the handlebars module
 const handlebars = require('express-handlebars');
-//Sets our app to use the handlebars engine
 app.set('view engine', 'handlebars');
-//Sets handlebars configurations (we will go through them later on)
+//Sets handlebars configurations 
 app.engine('handlebars', handlebars({
     layoutsDir: __dirname + '/views/layouts',
 }));
