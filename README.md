@@ -1,5 +1,8 @@
 # CS361
 
+Use this live link to perform GET requests detailed below without having to install the program:
+https://sound-search-moorenat.df.r.appspot.com/results/
+
 After cloning repository you should just have to run: (npm install) to create a package-lock.json file. Then you can start the server with: node index.js
 
 
