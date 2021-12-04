@@ -1,8 +1,11 @@
 # CS361
 
-Use this live link to perform GET requests detailed below without having to install the program:
-https://sound-search-moorenat.df.r.appspot.com/results/
+Use this live link to try out the app or perform GET requests detailed below without having to install the program:
+https://sound-search-moorenat.df.r.appspot.com
 
+This link and the SoundSearch app do not include the image search functionality as that is a micro-service written by a fellow student. 
+
+To install the SoundSearch app locally:
 After cloning repository you should just have to run: (npm install) to create a package-lock.json file. Then you can start the server with: node index.js
 
 
@@ -16,7 +19,7 @@ Headers:
 
 eg:
 
-localhost:3000/results/dog
+https://sound-search-moorenat.df.r.appspot.com/results/dog
 
 result:
 
